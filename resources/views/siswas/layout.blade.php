@@ -25,6 +25,8 @@
 
     <link rel="stylesheet" href="{{ asset ('assets/css/style.css')}}">
     
+    <link rel="icon" type="image/png" href="/somewhere/myicon.png" />
+    
   </head>
 <body>
     <div class="site-wrap">

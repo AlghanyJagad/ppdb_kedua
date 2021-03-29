@@ -17,4 +17,6 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+
+Route::get('siswa/cetak_pdf', 'SiswaController@cetak_pdf');
 Route::resource('siswa','SiswaController');

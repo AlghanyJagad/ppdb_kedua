@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Siswa;
 use Illuminate\Http\Request;
+use PDF;
 
 class SiswaController extends Controller
 {
@@ -117,5 +118,13 @@ class SiswaController extends Controller
   
         return redirect()->route('siswa.index')
                         ->with('success','siswa deleted successfully');
+    }
+    
+    public function cetak_pdf()
+    {
+    	$siswas = Siswa::all();
+ 
+    	$pdf = PDF::loadview('siswas/siswa_pdf',['siswas'=>$siswas]);
+    	return $pdf->download('laporan-siswa-pdf');
     }
 }

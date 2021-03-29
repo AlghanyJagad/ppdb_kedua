@@ -34,6 +34,7 @@
                     </div>
                     <div class="pull-right">
                         <a class="btn btn-success" href="{{ route('siswa.create') }}"> Tambah Siswa</a>
+                        <a href="/siswa/cetak_pdf" class="btn btn-primary" target="_blank">CETAK PDF</a>
                     </div>
                 </div>
             </div>
